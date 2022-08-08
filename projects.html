@@ -1,76 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-
-    <link rel=stylesheet type="text/css" href="CSS/style.css"> 
-
-    <title>Kaanel Studios' Projects Site</title>
-</head>
-<body>
-    <div id="page-wrapper">
-        <header id="header-wrapper">
-            <!--Holds the logo image-->
-            <div id="header-logo-wrapper">
-                <img src="IMAGES/Company_Title_TransprntWhite.gif" alt="Company Logo" class="titleGIF">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+      <link rel=stylesheet type="text/css" href="CSS/styles.css">
+      <title>Kaanel Studios Website</title>
+   </head>
+   <body>
+      <!-- Holds all the content of the page -->
+      <div id="page-content">
+         <div id="main">
+            <!-- Holds the header elements of the page -->
+            <div id="header-content">
+               <!-- Holds the logo GIF -->
+               <div id="logo-container">
+                  <img src="IMAGES/Company_Title_TransprntWhite.gif" alt="Company Title Gif">
+               </div>
             </div>
-        </header>   
-        <!--Holds all projects-->
-        <div id="projects-wrapper">
-            <div id="page-title">
-                PROJECTS
+            <!-- Holds navigation content -->
+            <div id="navigation-bar">
+               <!-- Holds burger menu content -->
+               <div id="burger-menu">
+                  <!-- Burger menu button -->
+                  <button class="burger-button">
+                     <p>≡</p>
+                  </button>
+                  <!-- Holds dropdown elements -->
+                  <div id="dropdown-content">
+                     <a href="index.html">HOME</a> 
+                     <a href="projects.html">PROJECTS</a>
+                  </div>
+               </div>
+               <!-- Holds navigation buttons when screen resolution is larger -->
+               <div id="navigation-buttons-holder">
+                <a href="index.html"><button class="navigation-button"><span>HOME</span></button></a>
+                <a href="projects.html"><button class="navigation-button"><span>PROJECTS</span></button></a>
+             </div>
             </div>
-            <!--Holds individual projects-->
-            <!--In the future, if you want to add another project on this page, simply copy the
-            "project-wrapper" DIV below and change the media and text.-->
-            <div id="project-wrapper">
-                <div class="project-intro-section">
-                    <div class="game-logo">
-                        <img src="IMAGES/AR_Show_Room_Logo.png" alt="Show Room AR Logo" class="logo-responsive">
-                    </div>
-                    <div class="project-text">
-                        <h1>ShowRoom AR</h1>
-                        ShowRoom AR is an Augmented Reality based mobile app built for Android and iOS platforms. The app is made with Unity and Google Firebase as the server backend.
-                        We made this app during our summer internship at Xamk Game Studios.
-                        <br>
-                        <br>
+            <!-- Holds all projects -->
+            <div id="projects-holder">
+               <!-- Holds an individual project container -->
+               <div class="individual-project-container">
+                  <!-- Holds project container elements -->
+                  <div class="project">
+                     <!-- Holds the project icon -->
+                     <div class="project-icon">
+                        <img src="IMAGES/AR_Show_Room_Logo.png" alt="Show Room AR Logo">
+                     </div>
+                     <!-- Holds the project description -->
+                     <div class="project-description">
+                        <!-- Holds the project description text -->
+                        <div class="project-desc-text">
+                           <h1>Show Room AR</h1>
+                           ShowRoom AR is an Augmented Reality based mobile app built for Android and iOS platforms. The app is made with Unity and Google Firebase as the server backend.
+                           We made this app during our summer internship at Xamk Game Studios.
+                        </div>
+                        <!-- Holds the project's "More" button -->
                         <div id="navigation-button-wrapper">
-                            <nav>
-                                <a href="showroomAr.html"><button class="navigation-button"><span>MORE</span></button></a>
-                            </nav>
+                           <nav>
+                              <a href="showroomAR.html"><button class="navigation-button"><span>MORE</span></button></a>
+                           </nav>
                         </div>
-                    </div>
-                </div>
-        </div>
-        <footer>
-            <div id="contact-text-wrapper">   
-                <div class="contact-info-holder">
-                    <div> Kankainen Jarno, Founder</div>
-                    <div class="email-info-holder">
-                        <div class="email-icon-image">
-                            <img src="IMAGES/Email_Icon.png" alt="Email Icon" class="responsive">
-                        </div>
-                        <div>cjaka021@edu.xamk.fi</div>
-                    </div> 
-                </div>
-                <div class="contact-info-holder">
-                    <div> Mikael Törni, Founder</div>
-                    <div class="email-info-holder">
-                        <div class="email-icon-image">
-                            <img src="IMAGES/Email_Icon.png" alt="Email Icon" class="responsive">
-                        </div>
-                        <div>cmito004@edu.xamk.fi</div>
-                    </div> 
-                </div>
-                    <div class="contact-info-holder">
-                    <div>business ID</div>
-                    <div>3295635-7</div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </footer>
-    </div>
-</body>
+         </div>
+         <!-- Holds the footer elements of the page -->
+         <div id="footer-content">
+            <div id="footer-information">
+               <!-- Holds footer info -->
+               <div class="footer-info-content">
+                  <!-- Holds top half of info -->
+                  <div class="info-top">
+                     Kankainen Jarno, co-ceo
+                  </div>
+                  <!-- Holds bottom half of info -->
+                  <div class="info-bottom">
+                     <!-- Holds info icon(s) -->
+                     <div class="icon-container">
+                        <img src="IMAGES/Email_Icon_Even_Smaller.png" alt="Email Icon">
+                     </div>
+                     <!-- Holds info text -->
+                     <div class="info-text-container">
+                        cjaka021@edu.xamk.fi
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-info-content">
+                <div class="info-bottom">
+                    <div class="info-text-container">
+                        Business ID: 3295635-7
+                     </div>
+                 </div>
+             </div>
+               <div class="footer-info-content">
+                  <div class="info-top">
+                     Mikael Törni, co-ceo
+                  </div>
+                  <div class="info-bottom">
+                     <div class="icon-container">
+                        <img src="IMAGES/Email_Icon_Even_Smaller.png" alt="Email Icon">
+                     </div>
+                     <div class="info-text-container">
+                        cmito004@edu.xamk.fi
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>

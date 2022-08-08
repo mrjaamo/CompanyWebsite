@@ -1,75 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-
-    <link rel=stylesheet type="text/css" href="CSS/style.css"> 
-
-    <title>Kaanel Studios Website</title>
-</head>
-<body>
-    <!--Holds all site elements-->
-    <div id="page-wrapper">
-        <!--Holds all header elements (logo, the navigation button(s))-->
-        <header id="header-wrapper">
-            <!--Holds the logo image-->
-            <div id="header-logo-wrapper">
-                <img src="IMAGES/Company_Title_TransprntWhite.gif" alt="Company Logo" class="titleGIF">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+      <link rel=stylesheet type="text/css" href="CSS/styles.css">
+      <title>Kaanel Studios Website</title>
+   </head>
+   <body>
+      <!-- Holds all the content of the page -->
+      <div id="page-content">
+         <div id="main">
+            <!-- Holds the header elements of the page -->
+            <div id="header-content">
+               <!-- Holds the logo GIF -->
+               <div id="logo-container">
+                  <img src="IMAGES/Company_Title_TransprntWhite.gif" alt="Company Title Gif">
+               </div>
             </div>
-        </header>
-        <!--Main content of the page-->
-        <div id="content-wrapper">
-            <div id="about-wrapper">
-                <!--Short description of the company-->
-                <div id="about-text-wrapper">
-                    <h1>WELCOME!</h1>
-                    Kaanel Studios is focused on producing AR-based games and applications. The team behind the company is currently located in Kotka, Finland.
-                    <br>The idea for the company began with a project titled "ShowRoom AR". We noticed that it started to have
-                    the potential to be something big and life-changing. That is why we are here now; to produce something
-                    new for everyone to use.
-                </div>
-                <!-- Projects button, takes to overall projects page-->
-                <div id="navigation-button-wrapper">
-                    <nav>
-                        <a href="projects.html"><button class="navigation-button"><span>PROJECTS</span></button></a>
-                    </nav>
-                </div>
+            <!-- Holds navigation content -->
+            <div id="navigation-bar">
+               <!-- Holds burger menu content -->
+               <div id="burger-menu">
+                  <!-- Burger menu button -->
+                  <button class="burger-button">
+                     <p>≡</p>
+                  </button>
+                  <!-- Holds dropdown elements -->
+                  <div id="dropdown-content">
+                     <a href="index.html">HOME</a> 
+                     <a href="projects.html">PROJECTS</a>
+                  </div>
+               </div>
+               <!-- Holds navigation buttons when screen resolution is larger -->
+               <div id="navigation-buttons-holder">
+                  <a href="index.html"><button class="navigation-button"><span>HOME</span></button></a>
+                  <a href="projects.html"><button class="navigation-button"><span>PROJECTS</span></button></a>
+               </div>
             </div>
-            <!--Holds the animated gif-->
-            <div id="ar-gif-holder">
-                <img src="IMAGES/AR_Gif.gif" alt="AR Gif" class="ArGIF">
+            <!-- Holds the about info of the company and related media -->
+            <div id="about-container">
+                <div id="left-side">
+                    <!-- Holds the about text -->
+                    <div class="text-container">
+                       <h1>WELCOME!</h1>
+                       Kaanel Studios is focused on producing AR-based games and applications. The team behind the company is currently located in Kotka, Finland.
+                       <br>The idea for the company began with a project titled "ShowRoom AR". We noticed that it started to have
+                       the potential to be something big and life-changing. That is why we are here now; to produce something
+                       new for everyone to use.
+                    </div>
+                    <!-- Holds navigation button to Projects -->
+                    <div id="navigation-button-wrapper">
+                       <nav>
+                          <a href="projects.html"><button class="navigation-button"><span>PROJECTS</span></button></a>
+                       </nav>
+                    </div>
+                </div>
+               <!-- Holds the AR GIF -->
+               <div class="image-container">
+                  <img src="IMAGES/AR_Gif.gif" alt="AR Gif">
+               </div>
             </div>
-        </div>
-        <!-- Footer -->
-        <footer>
-            <div id="contact-text-wrapper">        
-                <div class="contact-info-holder">
-                    <div> Kankainen Jarno, Founder</div>
-                    <div class="email-info-holder">
-                        <div class="email-icon-image">
-                            <img src="IMAGES/Email_Icon.png" alt="Email Icon" class="responsive">
-                        </div>
-                        <div>cjaka021@edu.xamk.fi</div>
-                    </div> 
-                </div>
-                <div class="contact-info-holder">
-                    <div> Mikael Törni, Founder</div>
-                    <div class="email-info-holder">
-                        <div class="email-icon-image">
-                            <img src="IMAGES/Email_Icon.png" alt="Email Icon" class="responsive">
-                        </div>
-                        <div>cmito004@edu.xamk.fi</div>
-                    </div> 
-                </div>
-                <div class="contact-info-holder">
-                    <div>business ID</div>
-                    <div>3295635-7</div>
-                </div>
+         </div>
+         <!-- Holds the footer elements of the page -->
+         <div id="footer-content">
+            <div id="footer-information">
+               <!-- Holds footer info -->
+               <div class="footer-info-content">
+                  <!-- Holds top half of info -->
+                  <div class="info-top">
+                     Kankainen Jarno, co-ceo
+                  </div>
+                  <!-- Holds bottom half of info -->
+                  <div class="info-bottom">
+                     <!-- Holds info icon(s) -->
+                     <div class="icon-container">
+                        <img src="IMAGES/Email_Icon_Even_Smaller.png" alt="Email Icon">
+                     </div>
+                     <!-- Holds info text -->
+                     <div class="info-text-container">
+                        cjaka021@edu.xamk.fi
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-info-content">
+                <div class="info-bottom">
+                    <div class="info-text-container">
+                        Business ID: 3295635-7
+                     </div>
+                 </div>
+             </div>
+               <div class="footer-info-content">
+                  <div class="info-top">
+                     Mikael Törni, co-ceo
+                  </div>
+                  <div class="info-bottom">
+                     <div class="icon-container">
+                        <img src="IMAGES/Email_Icon_Even_Smaller.png" alt="Email Icon">
+                     </div>
+                     <div class="info-text-container">
+                        cmito004@edu.xamk.fi
+                     </div>
+                  </div>
+               </div>
             </div>
-        </footer>
-    </div>
-</body>
+         </div>
+      </div>
+   </body>
 </html>

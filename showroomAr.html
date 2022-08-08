@@ -1,89 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-
-    <link rel=stylesheet type="text/css" href="CSS/style.css"> 
-
-    <title>Kaanel Studios' ShowRoom AR Project Site</title>
-</head>
-<body>
-    <div id="page-wrapper">
-        <header id="header-wrapper">
-            <!--Holds the logo image-->
-            <div id="header-logo-wrapper">
-                <div class="titleGIF">
-                    <img src="IMAGES/Company_Title_TransprntWhite.gif" alt="Company Logo" class="responsive">
-                </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+      <link rel=stylesheet type="text/css" href="CSS/styles.css">
+      <title>Kaanel Studios Website</title>
+   </head>
+   <body>
+      <!-- Holds all the content of the page -->
+      <div id="page-content">
+         <div id="main">
+            <!-- Holds the header elements of the page -->
+            <div id="header-content">
+               <!-- Holds the logo GIF -->
+               <div id="logo-container">
+                  <img src="IMAGES/Company_Title_TransprntWhite.gif" alt="Company Title Gif">
+               </div>
             </div>
-        </header>   
-        <!--Holds project info-->
-       <div id="project-wrapper">
-            <!--Holds the first section, contains logo image and introduction-->
-            <div class="project-intro-section">
-                <div class="game-logo">
-                    <img src="IMAGES/AR_Show_Room_Logo.png" alt="Show Room AR Logo" class="logo-responsive">
-                </div>
-                <div class="project-text">
-                    <h1>ShowRoom AR</h1>
-                    ShowRoom AR is meant for event organizers to create augmented reality events that the users can access and view. They can open events from a list that is sorted by: cities, the events, and their names inside the city. 
-                    Events can currently showcase art samples and will be able to show videos and 3D objects in the future.
-                </div>
+            <!-- Holds navigation content -->
+            <div id="navigation-bar">
+               <!-- Holds burger menu content -->
+               <div id="burger-menu">
+                  <!-- Burger menu button -->
+                  <button class="burger-button">
+                     <p>≡</p>
+                  </button>
+                  <!-- Holds dropdown elements -->
+                  <div id="dropdown-content">
+                     <a href="index.html">HOME</a> 
+                     <a href="projects.html">PROJECTS</a>
+                  </div>
+               </div>
+               <!-- Holds navigation buttons when screen resolution is larger -->
+               <div id="navigation-buttons-holder">
+                <a href="index.html"><button class="navigation-button"><span>HOME</span></button></a>
+                <a href="projects.html"><button class="navigation-button"><span>PROJECTS</span></button></a>
+             </div>
             </div>
-            <!--Holds project media, such as images and text-->
-            <div class="project-section-1">
-                <div class="project-images">
-                    <img src="IMAGES/AR_Show_Room_App_1.jpg" alt="Show Room AR Menu" class="responsive-image">
-                    <img src="IMAGES/AR_Show_Room_App_2.jpg" alt="Show Room AR Event Menu" class="responsive-image">
-                </div>
-                    <div class="project-text">
-                        <h2>Core App Mechanics</h2>
-                        On the first launch of the app, the user is directed to complete a tutorial that is basically an offline mode of the event. This will ask the user to provide permissions for the gyroscope and camera of the phone, which are required for the AR Core to work. This tutorial is primarily meant to test if the app is even compatible with the user's phone. 
-                        After this, the user can proceed to browsing the event list and choose an event. 
-                        <br><br> On the event, the user can tap on the pictures, view information about them, and like them.
-                        <h2>New Updates</h2>
-                        Now Users can preview different art on their own walls. With this, users could test if their desired art element would work in their own room or enviroment
-                    </div>
-            </div>
-            <!--Holds extra media, such as more images-->
-            <div class="project-section-2">
-                <div class="project-images">
-                    <img src="IMAGES/AR_Show_Room_Showcase_1.jpg" alt="Show Room AR Menu" class="showcase">
-                    <img src="IMAGES/AR_Show_Room_Showcase_2.jpg" alt="Show Room AR Event Menu" class="showcase">
-                    <img src="IMAGES/AR_Show_Room_Showcase_3.jpg" alt="Show Room AR Event Menu" class="showcase">
-                    <img src="IMAGES/AR_Show_Room_Showcase_4.jpg" alt="Show Room AR Event Menu" class="showcase">
-                </div>
-            </div>
-       </div>
-        <footer>
-            <div id="contact-text-wrapper">   
-                <div class="contact-info-holder">
-                    <div> Kankainen Jarno, Founder</div>
-                    <div class="email-info-holder">
-                        <div class="email-icon-image">
-                            <img src="IMAGES/Email_Icon.png" alt="Email Icon" class="responsive">
+            <!-- Holds all elements of the project -->
+            <div id="project-holder">
+               <!-- Holds an individual project container -->
+               <div class="project-container">
+                  <!-- Holds project container elements -->
+                  <div class="project-summary">
+                     <!-- Holds the project icon -->
+                     <div class="project-image">
+                        <img src="IMAGES/AR_Show_Room_Logo.png" alt="Show Room AR Logo">
+                     </div>
+                     <!-- Holds the project description -->
+                     <div class="project-description">
+                        <!-- Holds the project description text -->
+                        <div class="project-summary-text">
+                           <h1>Show Room AR</h1>
+                           Showroom AR is meant for event organizers to create augmented reality events that the users can access and view. They can open events from a list that is sorted by: cities, the events, and their names inside the city. 
+                           Events can currently showcase art samples and will be able to show videos and 3D objects in the future.
                         </div>
-                        <div>cjaka021@edu.xamk.fi</div>
-                    </div> 
-                </div>
-                <div class="contact-info-holder">
-                    <div> Mikael Törni, Founder</div>
-                    <div class="email-info-holder">
-                        <div class="email-icon-image">
-                            <img src="IMAGES/Email_Icon.png" alt="Email Icon" class="responsive">
-                        </div>
-                        <div>cmito004@edu.xamk.fi</div>
-                    </div> 
-                </div>
-                 <div class="contact-info-holder">
-                    <div>business ID</div>
-                    <div>3295635-7</div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </footer>
-    </div>
-</body>
+            <div class="project-section-one">
+               <div class="section-one-images">
+                  <img src="IMAGES/AR_Show_Room_App_1.jpg" alt="Show Room AR Menu">
+                  <img src="IMAGES/AR_Show_Room_App_2.jpg" alt="Show Room AR Event Menu">
+               </div>
+               <div class="section-one-text">
+                  <h2>Core App Mechanics</h2>
+                  On the first launch of the app, the user is directed to complete a tutorial that is basically an offline mode of the event. This will ask the user to provide permissions for the gyroscope and camera of the phone, which are required for the AR Core to work. This tutorial is primarily meant to test if the app is even compatible with the user's phone. 
+                  After this, the user can proceed to browsing the event list and choose an event. 
+                  <br><br> On the event, the user can tap on the pictures, view information about them, and like them.
+                  <h2>New Updates</h2>
+                  Now Users can preview different art on their own walls. With this, users could test if their desired art element would work in their own room or enviroment
+               </div>
+            </div>
+            <div class="project-section-two">
+               <div class="section-two-images">
+                  <img src="IMAGES/AR_Show_Room_Showcase_1.jpg" alt="Show Room AR Menu">
+                  <img src="IMAGES/AR_Show_Room_Showcase_2.jpg" alt="Show Room AR Event Menu">
+                  <img src="IMAGES/AR_Show_Room_Showcase_3.jpg" alt="Show Room AR Event Menu">
+                  <img src="IMAGES/AR_Show_Room_Showcase_4.jpg" alt="Show Room AR Event Menu">
+               </div>
+            </div>
+         </div>
+         <!-- Holds the footer elements of the page -->
+         <!-- Holds the footer elements of the page -->
+         <div id="footer-content">
+            <div id="footer-information">
+               <!-- Holds footer info -->
+               <div class="footer-info-content">
+                  <!-- Holds top half of info -->
+                  <div class="info-top">
+                     Kankainen Jarno, co-ceo
+                  </div>
+                  <!-- Holds bottom half of info -->
+                  <div class="info-bottom">
+                     <!-- Holds info icon(s) -->
+                     <div class="icon-container">
+                        <img src="IMAGES/Email_Icon_Even_Smaller.png" alt="Email Icon">
+                     </div>
+                     <!-- Holds info text -->
+                     <div class="info-text-container">
+                        cjaka021@edu.xamk.fi
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-info-content">
+                  <div class="info-bottom">
+                     <div class="info-text-container">
+                        Business ID: 3295635-7
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-info-content">
+                  <div class="info-top">
+                     Mikael Törni, co-ceo
+                  </div>
+                  <div class="info-bottom">
+                     <div class="icon-container">
+                        <img src="IMAGES/Email_Icon_Even_Smaller.png" alt="Email Icon">
+                     </div>
+                     <div class="info-text-container">
+                        cmito004@edu.xamk.fi
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </body>
 </html>
